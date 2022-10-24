@@ -1,4 +1,5 @@
-import throttle from 'lodash.throttle';
+ import throttle from 'lodash.throttle';
+
 import Player from '@vimeo/player';
 
 const iframe = document.querySelector('iframe');
@@ -21,8 +22,10 @@ function timeUpdate(event) {
   const timeSave = localStorage.getItem(STORAGE_KEY);
 
   if (timeSave) {
-    iframe.seconds = timeSave;
+    // iframe.seconds = timeSave;
     console.log(iframe.seconds);
   }
   
 player.setCurrentTime(timeSave);
+
+
