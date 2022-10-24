@@ -25,4 +25,4 @@ function timeUpdate(event) {
     console.log(iframe.seconds);
   }
   
-player.setCurrentTime(iframe.seconds);
+player.setCurrentTime(timeSave);
