@@ -36,6 +36,7 @@ function onForm(event) {
     message: event.target.message.value,
   };
   console.log(forms);
-  form.reset();
+ 
   localStorage.removeItem(STORAGE_KEY);
+   form.reset();
 }
