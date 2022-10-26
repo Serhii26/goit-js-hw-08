@@ -12,13 +12,14 @@ function timeUpdate(event) {
   const time = event.seconds;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(time));
   // console.log(time);
+  return time;
 }
 
 const timeSave = localStorage.getItem(STORAGE_KEY);
 
 if (timeSave) {
   // iframe.seconds = timeSave;
-  console.log(iframe.seconds);
+  // console.log(iframe.seconds);
   player.setCurrentTime(timeSave);
 }
 
